@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:contentDescription="@string/loginIcon"
+        android:src="@drawable/qq_logo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/qqshape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/userNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f3f7"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:autofillHints="@string/username" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/qqshape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="#f2f3f7"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/eye"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/visibility_toggle_button"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/qqshape"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/password_again"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="#f2f3f7"
+            android:gravity="center"
+            android:hint="@string/password_again"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textSize="20sp" />
+        <ToggleButton
+            android:id="@+id/eyes"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/visibility_toggle_button"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/loginbt"
+        android:enabled="false"
+        android:foreground="@drawable/login"
+        android:foregroundGravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

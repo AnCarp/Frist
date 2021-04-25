@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Frist</string>
+    <string name="calculator">计算器</string>
+    <string name="qq">QQ</string>
+    <string name="loginIcon">LogginIcon</string>
+    <string name="forget">忘记密码</string>
+    <string name="regist">用户注册</string>
+    <string name="password">输入密码</string>
+    <string name="password_again">再次输入密码</string>
+    <string name="ID">QQ号/手机号/邮箱</string>
+    <string name="username">用户名</string>
+</resources>

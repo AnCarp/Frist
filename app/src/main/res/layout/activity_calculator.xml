@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Calculator">
+
+
+        <TextView
+            android:id="@+id/number"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="end|center_vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+
+            android:autoSizeTextType="uniform"
+            android:gravity="end|center_vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline14"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="seven,eight,nine,minus"
+        app:flow_wrapMode="chain"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <android.widget.Button
+        android:id="@+id/seven"
+        style="@style/CalculatorButtonTheme"
+        android:text="7" />
+
+    <android.widget.Button
+        android:id="@+id/eight"
+        style="@style/CalculatorButtonTheme"
+        android:text="8" />
+
+    <android.widget.Button
+        android:id="@+id/nine"
+        style="@style/CalculatorButtonTheme"
+        android:text="9" />
+
+    <android.widget.Button
+        android:id="@+id/minus"
+        style="@style/CalculatorButtonTheme"
+        android:text="−" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="percent,sqrt,clear,delete"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <android.widget.Button
+        android:id="@+id/percent"
+        style="@style/CalculatorButtonTheme"
+        android:elevation="30dp"
+        android:text="%"
+        android:textSize="30sp" />
+
+    <android.widget.Button
+        android:id="@+id/sqrt"
+        style="@style/CalculatorButtonTheme"
+        android:elevation="30dp"
+        android:text="√"
+        android:textSize="30sp" />
+
+    <android.widget.Button
+        android:id="@+id/clear"
+        style="@style/CalculatorButtonTheme"
+        android:elevation="30dp"
+        android:text="c"
+        android:textSize="30sp" />
+
+    <android.widget.Button
+        android:id="@+id/delete"
+        style="@style/CalculatorButtonTheme"
+        android:text="DEL"
+        android:textSize="30sp" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="four,five,six,plus"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/four"
+        style="@style/CalculatorButtonTheme"
+        android:text="4" />
+
+    <android.widget.Button
+        android:id="@+id/five"
+        style="@style/CalculatorButtonTheme"
+        android:text="5" />
+
+    <android.widget.Button
+        android:id="@+id/six"
+        style="@style/CalculatorButtonTheme"
+        android:text="6" />
+
+    <android.widget.Button
+        android:id="@+id/plus"
+        style="@style/CalculatorButtonTheme"
+        android:text="+" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="zero,dot,equal,multiplication"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/zero"
+        style="@style/CalculatorButtonTheme"
+        android:text="0" />
+
+    <android.widget.Button
+        android:id="@+id/dot"
+        style="@style/CalculatorButtonTheme"
+        android:text="." />
+
+    <android.widget.Button
+        android:id="@+id/equal"
+        style="@style/CalculatorButtonTheme"
+        android:text="=" />
+
+    <android.widget.Button
+        android:id="@+id/multiplication"
+        style="@style/CalculatorButtonTheme"
+        android:text="×" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:constraint_referenced_ids="one,two,three,fraction"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/one"
+        style="@style/CalculatorButtonTheme"
+        android:text="1" />
+
+    <android.widget.Button
+        android:id="@+id/two"
+        style="@style/CalculatorButtonTheme"
+        android:text="2" />
+
+    <android.widget.Button
+        android:id="@+id/three"
+        style="@style/CalculatorButtonTheme"
+        android:text="3" />
+
+    <android.widget.Button
+        android:id="@+id/fraction"
+        style="@style/CalculatorButtonTheme"
+        android:text="÷" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40218878" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
